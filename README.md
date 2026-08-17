@@ -1,110 +1,121 @@
 # Rock_pape_scissors_game
 Rock-Paper-Scissors CLI Game built in Python. User plays against computer with random choice generation. Includes game logic, score tracking, and multiple rounds. Handles invalid input and provides clear user feedback. Simple command-line interface to demonstrate Python basics.
 
-# 🎮 Rock Paper Scissors Game
+# Rock Paper Scissors Game 🎮
 
-A simple **Rock-Paper-Scissors game built using Python**.
-The player competes against the computer, which randomly selects rock, paper, or scissors.
+A simple **Rock-Paper-Scissors command-line game built using Python**. The player competes against the computer, which randomly selects rock, paper, or scissors.
 
-## 📌 Features
+## Features
 
-* 🎯 Player vs Computer gameplay
-* 🎲 Random computer choices using Python's `random` module
+* 🎮 Player vs Computer gameplay
+* 🎲 Random computer choice generation
 * 🏆 Automatic winner determination
-* 📊 Score tracking for both player and computer
-* 🔄 Option to play multiple rounds
-* ❌ Input validation for invalid choices
-* 👋 Displays the final score when the game ends
+* 📊 Score tracking
+* 🔄 Multiple rounds
+* ❌ Invalid input handling
+* 🖥️ Simple command-line interface
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-* **Python**
+* **Python 3**
 * `random` module
-* Functions
-* Conditional statements
-* While loop
-* User input
-* String methods
-* f-strings
 
 ## 📂 Project Structure
 
 ```text
-Rock-Paper-Scissors/
+Rock_pape_scissors_game/
 │
 ├── rock_paper_scissors.py
-└── README.md
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
-## ▶️ How to Run
+## Concepts Used
+
+This project demonstrates the following Python concepts:
+
+* Functions
+* Lists
+* Variables
+* `if`, `elif`, and `else`
+* `while` loop
+* `break` and `continue`
+* User input
+* String methods
+* `random.choice()`
+* f-strings
+
+## How the Game Works
+
+The game follows the standard Rock-Paper-Scissors rules:
+
+| Player                 | Computer    | Result      |
+| ---------------------- | ----------- | ----------- |
+| Rock                   | Scissors    | You Win 🏆  |
+| Paper                  | Rock        | You Win 🏆  |
+| Scissors               | Paper       | You Win 🏆  |
+| Same Choice            | Same Choice | Tie 🤝      |
+| All Other Combinations | —           | You Lose 😢 |
+
+## How to Run
 
 ### 1. Clone the repository
-   git clone https://github.com/Sakshi-06-a/Rock_paper_scissors_game.git
+
+```bash
+git clone https://github.com/Sakshi-06-a/Rock_pape_scissors_game.git
+```
 
 ### 2. Open the project folder
 
 ```bash
-   cd Rock_paper_scissors_game
+cd Rock_pape_scissors_game
 ```
 
-### 3. Run the Python program
+### 3. Run the program
 
 ```bash
 python rock_paper_scissors.py
 ```
 
-## 🎮 How to Play
+## How to Play
 
 1. Run the program.
-2. Enter one of the following choices:
-
-   * `rock`
-   * `paper`
-   * `scissors`
+2. Enter `rock`, `paper`, or `scissors`.
 3. The computer randomly selects its choice.
-4. The game determines the winner.
-5. Your score and the computer's score are displayed.
-6. Choose whether you want to play another round.
+4. The winner is displayed.
+5. The scores are updated.
+6. Enter `y` to play another round or `n` to exit.
 
-## 🧠 Game Rules
+## Example
 
-| Player             | Computer    | Result           |
-| ------------------ | ----------- | ---------------- |
-| Rock               | Scissors    | 🏆 Player Wins   |
-| Scissors           | Paper       | 🏆 Player Wins   |
-| Paper              | Rock        | 🏆 Player Wins   |
-| Same choice        | Same choice | 🤝 Tie           |
-| Other combinations | —           | 😢 Computer Wins |
+```text
+========================================
+Welcome to Rock-Paper-Scissors Game!
+========================================
 
-## 💡 Concepts Practiced
+Choose: rock, paper, or scissors: rock
 
-This project helped practice important Python concepts such as:
+You chose: rock
+Computer chose: scissors
 
-* Defining and calling functions
-* `if`, `elif`, and `else`
-* `while` loops
-* `break` and `continue`
-* Lists
-* `random.choice()`
-* User input using `input()`
-* String methods such as `.lower()`
-* Variables and score tracking
-* f-strings
+You Win! 🎉
 
-## 🚀 Future Improvements
+Score - You: 1 | Computer: 0
+```
 
-Some possible improvements for this project:
+## Future Improvements
 
-* Add a **Best of 3 / Best of 5** mode
-* Add difficulty levels
+* Add Best of 3 or Best of 5 mode
 * Add player names
-* Store game history
-* Create a graphical user interface (GUI)
-* Add more detailed statistics
+* Add game statistics
+* Add a graphical user interface (GUI)
+* Store previous game results
 
-## 👩‍💻 Author
+## Author
 
 **Sakshi**
 
-This project was created as a beginner Python project to practice programming fundamentals and logical problem-solving.
+This project was created to practice **Python programming fundamentals, functions, loops, conditional statements, and basic problem-solving**.
+
 
